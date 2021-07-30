@@ -1,0 +1,32 @@
+{
+  "name": "@koromerzhin/template-strapi",
+  "version": "1.0.0",
+  "description": "Nouveau projet sous strapi",
+  "scripts": {
+    "linter-markdown": "markdownlint",
+    "contributors": "all-contributors",
+    "readme": "readme",
+    "licenses": "license-checker",
+    "changelog": "changelog",
+    "jscpd": "jscpd app/src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/koromerzhin/template-strapi.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/koromerzhin/template-strapi/issues"
+  },
+  "homepage": "https://github.com/koromerzhin/template-strapi#readme",
+  "devDependencies": {
+    "all-contributors-cli": "6.20.0",
+    "generate-changelog": "1.8.0",
+    "jscpd": "3.3.26",
+    "license-checker": "25.0.1",
+    "markdownlint-cli": "0.27.1",
+    "readme-md-generator": "1.0.0"
+  }
+}
