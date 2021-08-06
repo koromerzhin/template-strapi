@@ -74,15 +74,21 @@ endif
 logs: isdocker ## Scripts logs
 ifeq ($(COMMAND_ARGS),stack)
 	@docker service logs -f --tail 100 --raw $(STACK)
-else ifeq ($(COMMAND_ARGS),www)
-	@docker service logs -f --tail 100 --raw $(WWWFULLNAME)
+else ifeq ($(COMMAND_ARGS),mariadb)
+	@docker service logs -f --tail 100 --raw $(MARIADBFULLNAME)
+else ifeq ($(COMMAND_ARGS),strapi)
+	@docker service logs -f --tail 100 --raw $(STRAPIFULLNAME)
+else ifeq ($(COMMAND_ARGS),phpmyadmin)
+	@docker service logs -f --tail 100 --raw $(PHPMYADMINFULLNAME)
 else
 	@echo "ARGUMENT missing"
 	@echo "---"
 	@echo "make logs ARGUMENT"
 	@echo "---"
 	@echo "stack: logs stack"
-	@echo "www: WWW"
+	@echo "mariadb: MARIADB"
+	@echo "strapi: STRAPI"
+	@echo "phpmyadmin: PHPMYADMIN"
 endif
 
 git: node_modules ## Scripts GIT
