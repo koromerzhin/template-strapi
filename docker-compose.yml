@@ -35,7 +35,7 @@ services:
                 - "traefik.http.routers.strapi-tls.tls.domains[0].sans=strapi-*.traefik.me"
                 - "traefik.http.services.strapi.loadbalancer.server.port=1337"
     mariadb:
-        image: mariadb:10.5.9
+        image: mariadb:10.6.4
         environment:
             MYSQL_ROOT_PASSWORD: example
             MYSQL_DATABASE: core
