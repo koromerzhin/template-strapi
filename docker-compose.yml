@@ -1,7 +1,7 @@
 
 version: "3.4"
 networks:
-  proxynetwork:
+  proxylampy:
     external: true
   net:
     driver: overlay
@@ -26,7 +26,7 @@ services:
             - mariadb
         networks:
             - net
-            - proxynetwork
+            - proxylampy
         deploy:
             labels:
                 - "traefik.enable=true"
@@ -59,7 +59,7 @@ services:
             - mariadb
         networks:
             - net
-            - proxynetwork
+            - proxylampy
         deploy:
             labels:
                 - "traefik.enable=true"
