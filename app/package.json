@@ -19,7 +19,7 @@
     "strapi-plugin-users-permissions": "3.6.5",
     "strapi-plugin-email": "3.6.5",
     "strapi-plugin-upload": "3.6.5",
-    "strapi-plugin-i18n": "3.6.5",
+    "strapi-plugin-i18n": "3.6.8",
     "strapi-connector-bookshelf": "3.6.5",
     "knex": "0.21.18",
     "mysql": "2.18.1"
