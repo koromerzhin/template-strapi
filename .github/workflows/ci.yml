@@ -12,6 +12,12 @@ jobs:
         uses: actions/checkout@v2
         with:
           submodules: recursive
+      - name: Repository lampy
+        uses: actions/checkout@v2
+        with:
+          submodules: recursive
+          repository: koromerzhin/lampy
+          path: lampy
       - name: Cache npm packages
         id: npm-cache
         uses: actions/cache@v2
@@ -25,6 +31,10 @@ jobs:
         run: make node_modules
       - name: 'Docker swarm init'
         run: make docker swarm-init
+      - name: 'SET BDD'
+        run: make bddset
+      - name: 'Launch Lampy'
+        run: make lampy
       - name: 'Create proxy network'
         run: make docker create-network
       - name: 'Image pull'

@@ -16,8 +16,8 @@ services:
             DATABASE_CLIENT: mysql
             DATABASE_HOST: mariadb
             DATABASE_PORT: 3306
-            DATABASE_NAME: core
-            DATABASE_USERNAME: siteinternet
+            DATABASE_NAME: strapi_bdd
+            DATABASE_USERNAME: strapi
             DATABASE_PASSWORD: password
             DATABASE_SSL: 'false'
         volumes:
