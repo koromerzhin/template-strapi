@@ -13,7 +13,7 @@ volumes:
     mariadb_data:
 services:
     strapi:
-        image: strapi/strapi:3.6.5
+        image: strapi/strapi:3.6.8
         environment:
             DATABASE_CLIENT: mysql
             DATABASE_HOST: mariadb
