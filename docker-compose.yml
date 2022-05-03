@@ -33,5 +33,7 @@ services:
         deploy:
             labels:
                 - "traefik.enable=true"
-                - "traefik.http.routers.strapi.rule=HostRegexp(`strapi.traefik.me`, `strapi.{ip:.*}.traefik.me`)"
+                - "traefik.http.routers.strapi.rule=Host(`strapi.traefik.me`)"
+                - "traefik.http.routers.strapi-tls.tls.domains[0].main=strapi.traefik.me"
+                - "traefik.http.routers.strapi.tls=true"
                 - "traefik.http.services.strapi.loadbalancer.server.port=1337"

@@ -20,6 +20,14 @@ Software:
 - make
 - npm
 
+## Download
+
+```sh
+git clone git@github.com:koromerzhin/template-strapi.git template-strapi
+cd template-strapi
+git submodule update --init
+```
+
 ## Install
 
 ```sh
